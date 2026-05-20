@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script th:src="@{/webjars/jquery/3.6.0/jquery.min.js}"></script>
+</head>
+<body class="bg-gray-100">
+<div class="max-w-2xl mx-auto mt-12 p-6 bg-white rounded shadow">
+    <h1 class="text-2xl mb-4">Dashboard</h1>
+    <div>
+        <p><strong>Username:</strong> <span th:text="${user.username}"></span></p>
+        <p><strong>Nama:</strong> <span th:text="${user.nama}"></span></p>
+        <p><strong>Alamat:</strong> <span th:text="${user.profile != null ? user.profile.alamat : ' - '}"></span></p>
+    </div>
+    <div class="mt-4">
+        <form th:action="@{/logout}" method="post">
+            <button class="bg-red-600 text-white px-3 py-1 rounded">Logout</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

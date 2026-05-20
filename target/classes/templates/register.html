@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+<div class="max-w-md mx-auto mt-16 p-6 bg-white rounded shadow">
+    <h1 class="text-2xl mb-4">Register</h1>
+    <div th:if="${error}" class="text-red-600 mb-2" th:text="${error}"></div>
+    <form th:action="@{/register}" method="post" th:object="${registerRequest}">
+        <div class="mb-2">
+            <label class="block">Username</label>
+            <input type="text" th:field="*{username}" class="w-full border px-2 py-1" required />
+        </div>
+        <div class="mb-2">
+            <label class="block">Password</label>
+            <input type="password" th:field="*{password}" class="w-full border px-2 py-1" required />
+        </div>
+        <div class="mb-2">
+            <label class="block">Nama</label>
+            <input type="text" th:field="*{nama}" class="w-full border px-2 py-1" />
+        </div>
+        <div class="mb-4">
+            <label class="block">Alamat</label>
+            <input type="text" th:field="*{alamat}" class="w-full border px-2 py-1" />
+        </div>
+        <div>
+            <button class="bg-blue-600 text-white px-4 py-2 rounded">Register</button>
+            <a href="/login" class="ml-4 text-sm text-gray-600">Login</a>
+        </div>
+    </form>
+</div>
+</body>
+</html>
