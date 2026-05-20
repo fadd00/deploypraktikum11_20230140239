@@ -1,0 +1,11 @@
+/home/fadd/Documents/vscode/deploy/deployment11_20230140239/src/main/java/com/deploy11/pertemuan11/repository/ProfileRepository.java
+/home/fadd/Documents/vscode/deploy/deployment11_20230140239/src/main/java/com/deploy11/pertemuan11/Pertemuan11Application.java
+/home/fadd/Documents/vscode/deploy/deployment11_20230140239/src/main/java/com/deploy11/pertemuan11/security/SecurityConfig.java
+/home/fadd/Documents/vscode/deploy/deployment11_20230140239/src/main/java/com/deploy11/pertemuan11/controller/HomeController.java
+/home/fadd/Documents/vscode/deploy/deployment11_20230140239/src/main/java/com/deploy11/pertemuan11/service/AuthService.java
+/home/fadd/Documents/vscode/deploy/deployment11_20230140239/src/main/java/com/deploy11/pertemuan11/repository/UserRepository.java
+/home/fadd/Documents/vscode/deploy/deployment11_20230140239/src/main/java/com/deploy11/pertemuan11/model/Profile.java
+/home/fadd/Documents/vscode/deploy/deployment11_20230140239/src/main/java/com/deploy11/pertemuan11/model/dto/RegisterRequest.java
+/home/fadd/Documents/vscode/deploy/deployment11_20230140239/src/main/java/com/deploy11/pertemuan11/controller/AuthController.java
+/home/fadd/Documents/vscode/deploy/deployment11_20230140239/src/main/java/Main.java
+/home/fadd/Documents/vscode/deploy/deployment11_20230140239/src/main/java/com/deploy11/pertemuan11/model/User.java

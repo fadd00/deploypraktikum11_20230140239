@@ -1,0 +1,11 @@
+com/deploy11/pertemuan11/repository/ProfileRepository.class
+com/deploy11/pertemuan11/model/User.class
+com/deploy11/pertemuan11/model/Profile.class
+com/deploy11/pertemuan11/security/SecurityConfig.class
+com/deploy11/pertemuan11/controller/AuthController.class
+Main.class
+com/deploy11/pertemuan11/service/AuthService.class
+com/deploy11/pertemuan11/controller/HomeController.class
+com/deploy11/pertemuan11/model/dto/RegisterRequest.class
+com/deploy11/pertemuan11/Pertemuan11Application.class
+com/deploy11/pertemuan11/repository/UserRepository.class

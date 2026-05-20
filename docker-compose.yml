@@ -1,15 +1,35 @@
 version: '3.8'
 services:
   db:
-    image: postgres:15
+    image: mariadb:11
+    container_name: db_mahasiswa
     environment:
-      POSTGRES_DB: pertemuan11_db
-      POSTGRES_USER: pertemuan_user
-      POSTGRES_PASSWORD: abcde
+      MARIADB_DATABASE: pertemuan11_db
+      MARIADB_USER: pertemuan_user
+      MARIADB_PASSWORD: abcde
+      MARIADB_ROOT_PASSWORD: rootpass
     ports:
-      - "5432:5432"
+      - "3306:3306"
     volumes:
-      - db_data:/var/lib/postgresql/data
+      - db_data:/var/lib/mysql
+
+  app:
+    build: .
+    container_name: pertemuan11_app
+    depends_on:
+      - db
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mariadb://db:3306/pertemuan11_db
+      SPRING_DATASOURCE_USERNAME: pertemuan_user
+      SPRING_DATASOURCE_PASSWORD: abcde
+    ports:
+      - "8080:8080"
+    networks:
+      - default
 
 volumes:
   db_data:
+
+networks:
+  default:
+    driver: bridge
